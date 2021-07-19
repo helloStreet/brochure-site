@@ -1,0 +1,46 @@
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: initial;
+  bottom: 4px;
+  left: 90px;
+  z-index: 200;
+  background-position: center;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMzQgMzQiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojZmZmO30uY2xzLTEsLmNscy00e2ZpbGwtcnVsZTpldmVub2RkO30uY2xzLTIsLmNscy00e2ZpbGw6I2JmNTQ0NTt9LmNscy0ze21hc2s6dXJsKCNtYXNrKTt9PC9zdHlsZT48bWFzayBpZD0ibWFzayIgeD0iMCIgeT0iMCIgd2lkdGg9IjM0IiBoZWlnaHQ9IjM0IiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48ZyBpZD0ibWFzay0yIj48cGF0aCBpZD0icGF0aC0xIiBjbGFzcz0iY2xzLTEiIGQ9Ik0xNywwQTE3LDE3LDAsMSwwLDM0LDE3LDE3LDE3LDAsMCwwLDE3LDBabTguMzMsMTcuNDJMMjAsMjIuNWEuNi42LDAsMCwxLS40My4xNy41OS41OSwwLDAsMS0uNDItLjE3LjU1LjU1LDAsMCwxLDAtLjgxbDQuMzQtNC4xSDkuMUEuNTguNTgsMCwwLDEsOC41LDE3YS41Ni41NiwwLDAsMSwuMTctLjQuNjMuNjMsMCwwLDEsLjQzLS4xN0gyMy40NGwtNC4zNC00LjFhLjU1LjU1LDAsMCwxLS4yMi0uNTguNjIuNjIsMCwwLDEsLjQ3LS40My42NC42NCwwLDAsMSwuNi4yMmw1LjM4LDUuMDhhLjUzLjUzLDAsMCwxLDAsLjc4WiIvPjwvZz48L21hc2s+PC9kZWZzPjxnIGlkPSJJY29uc19BcnJvd0NpcmNsZSIgZGF0YS1uYW1lPSJJY29ucy9BcnJvd0NpcmNsZSI+PGcgaWQ9IlNoYXBlIj48cGF0aCBpZD0icGF0aC0xLTIiIGRhdGEtbmFtZT0icGF0aC0xIiBjbGFzcz0iY2xzLTIiIGQ9Ik0xNywwQTE3LDE3LDAsMSwwLDM0LDE3LDE3LDE3LDAsMCwwLDE3LDBabTguMzMsMTcuNDJMMjAsMjIuNWEuNi42LDAsMCwxLS40My4xNy41OS41OSwwLDAsMS0uNDItLjE3LjU1LjU1LDAsMCwxLDAtLjgxbDQuMzQtNC4xSDkuMUEuNTguNTgsMCwwLDEsOC41LDE3YS41Ni41NiwwLDAsMSwuMTctLjQuNjMuNjMsMCwwLDEsLjQzLS4xN0gyMy40NGwtNC4zNC00LjFhLjU1LjU1LDAsMCwxLS4yMi0uNTguNjIuNjIsMCwwLDEsLjQ3LS40My42NC42NCwwLDAsMSwuNi4yMmw1LjM4LDUuMDhhLjUzLjUzLDAsMCwxLDAsLjc4WiIvPjwvZz48ZyBjbGFzcz0iY2xzLTMiPjxnIGlkPSJJY29uLWNvbG91ciI+PHBvbHlnb24gaWQ9IlJlY3RhbmdsZSIgY2xhc3M9ImNscy00IiBwb2ludHM9IjAgMCAzNCAwIDM0IDM0IDAgMzQgMCAwIi8+PC9nPjwvZz48L2c+PC9zdmc+);
+  background-repeat: no-repeat;
+}
+.swiper-button-prev {
+  transform: rotate(180deg);
+  left: 50px;
+  bottom: 4px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  opacity: 0;
+}
+.swiper-scrollbar {
+  display: none;
+  position: relative;
+  max-width: 80%;
+  background-color: lightgrey;
+  margin-bottom: 20px;
+  margin-left: 130px;
+}
+.swiper-scrollbar-drag {
+  position: relative;
+  max-width: 285px;
+  background-color: #f12b5a;
+}
+
+@media (max-width: 1024px) {
+  .swiper-button-next {
+    left: 50px;
+  }
+  .swiper-button-prev {
+    left: 15px;
+  }
+  .swiper-scrollbar {
+    margin-left: 75px;
+  }
+}
