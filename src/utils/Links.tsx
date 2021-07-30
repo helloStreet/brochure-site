@@ -1,24 +1,17 @@
 export const NavLinks = [
   { title: "Home", Url: "/", children: [] },
   {
-    title: "Development",
-    Url: "/development",
+    title: "Services",
+    Url: "/",
     children: [
-      { title: "Design", Url: "/design" },
-      { title: "Hosting", Url: "hosting" },
-      { title: "CMS", Url: "content-management-system" },
+      { title: "Development", Url: "/development" },
+      { title: "Maintenence", Url: "/maintenance" },
+      { title: "Content Managment", Url: "/content-management" },
     ],
   },
-  {
-    title: "Maintenance",
-    Url: "/maintenance",
-    children: [
-      { title: "Design", Url: "/design" },
-      { title: "Hosting", Url: "hosting" },
-      { title: "CMS", Url: "content-management-system" },
-    ],
-  },
-  { title: "Content Management", Url: "/", children: [] },
+
+  { title: "Pricing", Url: "/pricing", children: [] },
+  { title: "About", Url: "/about", children: [] },
 ];
 
 export const footerContactLinks = [
@@ -28,8 +21,7 @@ export const footerContactLinks = [
 
 export const footerPages = [
   { title: "Home", Url: "/" },
-  { title: "Get in touch", Url: "/" },
-  { title: "Contact", Url: "/" },
+  { title: "Say Hello", Url: "/hello" },
   { title: "Terms and conditions", Url: "/" },
   { title: "Privacy Policy", Url: "/" },
 ];

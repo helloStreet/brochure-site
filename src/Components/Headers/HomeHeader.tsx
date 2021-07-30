@@ -1,33 +1,24 @@
-import { graphql, Link, useStaticQuery } from "gatsby";
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import "../../styles/styles.scss";
 import HomeBannerImage from "../../images/hellostreetwhite.jpg";
+import HomeBannerImage2 from "../../images/hellostreetwhitesmall.webp";
 import "../../styles/styles.scss";
-import { HeaderText } from "../../utils/Strings";
+import { homeData } from "../../utils/Strings";
 const HomeHeader = () => {
-  //temp image as import not working
-  const headerimage = useStaticQuery(graphql`
-    {
-      placeholderImage: file(name: { eq: "logowhite" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-    }
-  `);
-
   return (
-    <div className="max-w-full  h-96 mb-0 pt-32">
-      <img
-        src={HomeBannerImage}
-        alt="Header image"
-        style={{ height: "auto", width: "50%" }}
-        className="homelogo mx-auto"
-      />
+    <div className="max-w-full h-700  mb-0 pt-32">
+      <div className="">
+        <img
+          src={HomeBannerImage2}
+          alt="Header image"
+          style={{ height: "auto", width: "50%" }}
+          className="homelogo mx-auto home-header-animation"
+        />
+      </div>
 
-      <div>
-        <p className="text-mypink">{HeaderText}</p>
+      <div className="mx-auto text-center">
+        <h2 className="text-mypink">{homeData.header.title}</h2>
+        <h3 className="text-mypink">{homeData.header.tagLine}</h3>
       </div>
     </div>
   );

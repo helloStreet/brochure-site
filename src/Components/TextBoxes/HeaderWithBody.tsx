@@ -1,18 +1,12 @@
 import { Link } from "gatsby";
 import React from "react";
-import helloblue from "../../images/hellowhite.jpg";
-interface ITextWithImage {
-  data: any;
-  left?: boolean;
-}
 
-const ImageWithText: React.FC<ITextWithImage> = ({ data }) => {
+export const HeaderWithBody = ({ data }) => {
   const { title } = data.attrs;
   const { heading } = data.attrs;
   const body = data.attrs.body;
   const { body2 } = data.attrs;
   const { left } = data.attrs;
-  const { image } = data.attrs;
   const ctaLabel = data.attrs.ctaLabel;
   const ctaLink = data.attrs.ctaLink;
 
@@ -24,26 +18,15 @@ const ImageWithText: React.FC<ITextWithImage> = ({ data }) => {
             left ? "md:flex-row" : "md:flex-row-reverse"
           }`}
         >
-          <div className="flex-1 h-64 md:ml-5 items center  flex md:pr-2">
-            {image && (
-              <img
-                src={image}
-                style={{
-                  objectFit: "scale-down",
-                  height: "100%",
-                  margin: " 0 auto",
-                }}
-                alt="alt"
-              />
-            )}
-          </div>
-          <div className="flex-1 md:ml-5 items-center md:pr-2">
+          <div className="flex-1 md:ml-5 md:pr-2">
             {title && (
-              <p className="text-forestgreen font-magnole pt-5 md:pt-0">
+              <p className="text-myaubergine font-magnole pt-5 md:pt-0">
                 {title}
               </p>
             )}
-            {heading && <h4 className=" pt-3 text-forestgreen">{heading}</h4>}
+            {heading && <h4 className=" pt-3 text-myaubergine">{heading}</h4>}
+          </div>
+          <div className="flex-1 md:ml-5 md:pr-2">
             {body && <p className=" pt-3">{body}</p>}
             {body2 && <p className=" pt-3">{body2}</p>}
             {ctaLink && (
@@ -61,4 +44,4 @@ const ImageWithText: React.FC<ITextWithImage> = ({ data }) => {
     </div>
   );
 };
-export default ImageWithText;
+export default HeaderWithBody;

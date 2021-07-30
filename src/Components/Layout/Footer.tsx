@@ -1,10 +1,10 @@
 import { Link } from "gatsby";
 import React from "react";
-import hello from "../../images/hellowhite.jpg";
+import hello from "../../images/hellostreetwhite.jpg";
 
 const Footer = ({ pages, getInTouchLinks }) => {
   return (
-    <div className="max-w-screen-2x  mx-auto px-5 pb-4">
+    <footer className="max-w-screen-2x  mx-auto px-5 pb-4">
       <div className="max-w-screen-xl flex flex-col mx-auto py-8 text-myaubergine">
         <p> &#169; 2021 Hello Street Ltd. All rights reserved.</p>
       </div>
@@ -42,7 +42,7 @@ const Footer = ({ pages, getInTouchLinks }) => {
           <img src={hello} />
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

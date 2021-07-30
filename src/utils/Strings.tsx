@@ -1,30 +1,44 @@
+import road from "../images/road.jpg";
+import helloblue from "../images/helloblue.jpg";
+import hellowhite from "../images/hellowhite.jpg";
+import chart from "../images/chartbig.png";
+import smile from "../images/smile.png";
+import heart from "../images/heart.png";
+import spanner from "../images/spanner.png";
+
+export const roadHeader = road;
+
 export const PromoBannerInfo = {
   title:
-    "No sure whats right for you or just want to find some more information?",
-  ctaLabel: "Get in touch",
-  ctaLink: "/contact",
+    "Not sure whats right for you or just want to find some more information?",
+  ctaLabel: "Say hello",
+  ctaLink: "/hello",
 };
 
 export const carouselCardInfo = [
   {
     title: "Website Maintence",
-    body: "Find out more about how we can help keep your site secure, up to date and ",
+    body: "Security, SEO and updates, let us take the stress out of you site  maintenance",
     link: "/maintenance",
+    image: spanner,
   },
   {
     title: "SEO",
     body: "It's never been more important to be found top of a search, we can get you there!",
-    link: "/seo",
+    link: "/maintenance",
+    image: chart,
   },
   {
     title: "Content Management",
-    body: "Let us keep your website content fresh",
+    body: "We can make sure that your content is always up to date",
     link: "/content-managment",
+    image: heart,
   },
   {
     title: "Web Development",
     body: "We can create your website, with a tech stack that suits your needs",
     link: "/development",
+    image: smile,
   },
 ];
 export const priceCardInfo = [
@@ -55,101 +69,140 @@ export const priceCardInfo = [
 ];
 
 export const homeData = {
-  header: { title: "development", tagLine: "We Develop sites" },
+  header: { title: "websites", tagLine: "made easy" },
 
   textBox: {
     attrs: {
       title: "",
       heading: "Hello Street",
-      body: "we are passionate about websites. Having worked in small companies, large companies, startups and we established design agencies, our team specialise in creating responsive, engaging site which will generate more leads and higher search engine results.",
+      body: "We are passionate about the web. We've worked with large companies, small companies, startups and well-established design agencies, our team specialise in creating responsive, engaging sites which will generate more leads and higher search engine results.",
       body2: "",
-      ctaLabel: "Get in touch",
-      image: "data.attrs",
+      ctaLabel: "Find out more",
+      image: hellowhite,
       left: true,
-      ctaLink: "/development",
+      ctaLink: "/hello",
     },
   },
   textBox2: {
     attrs: {
       title: "",
       heading: "Pricing",
-      body: "We know its a mindfield trying to find the right product at the right price. We offer both of the shelf and bespoke solutions, We're sure you'll find something that suits!.",
+      body: "We know its a mindfield trying to find the right product at the right price. We offer both off the shelf and bespoke solutions to suit all your needs.",
       body2: "",
-      ctaLabel: "Prices",
-      image: "data.attrs",
+      ctaLabel: "See our prices",
+      image: helloblue,
       left: false,
       ctaLink: "/pricing",
     },
   },
 };
+
 export const developmentData = {
-  header: { title: "development", tagLine: "We Develop sites" },
+  header: {
+    title: "development",
+    tagLine: "Get your site up and running with us",
+  },
 
   textBox: {
     attrs: {
+      title: "",
       heading: "Helping businesses grow their online presence since 2020",
-      title: "Hello Street",
-      body: "body about development",
-      body2: "",
+      body: "Whether you need a site making from scratch, up your current site just needs refreshing, we will take the stress out of it, delivering exactly what you need to grow your business. We can design, build and host your site so you don’t need to worry about a thing ",
+      body2: " ",
       ctaLabel: "Get in touch",
-      image: "data.attrs",
+      image: hellowhite,
+      left: true,
+      ctaLink: "",
+    },
+  },
+  textBox2: {
+    attrs: {
+      title: "",
+      heading: "",
+      body: "If you already have a site but are looking for a way to make updating it easier, leave it to us. ",
+      body2:
+        "We can provide a range of solutions for managing your site yourself, Get in touch to find out more. ",
+      ctaLabel: "Get in touch",
+      image: hellowhite,
       left: false,
-      ctaLink: "/development",
+      ctaLink: "/hello",
     },
   },
 };
 export const maintenanceData = {
-  header: { title: "Maintenance", tagLine: "Let us keep your site up to date" },
+  header: {
+    title: "maintenance",
+    tagLine:
+      "Updates, Hosting, SEO and Security and Security, We’ve got you covered.",
+  },
 
-  textBox: {
+  textBox1: {
     attrs: {
-      heading: "",
-      title: "Hello Street",
-      body: "body about maintenance",
+      title: "",
+      heading: "Updates",
+      body: "We'll keep your site updated",
       body2: "",
       ctaLabel: "Get in touch",
-      image: "data.attrs",
-      left: false,
-      ctaLink: "/development",
+      image: heart,
+      left: true,
+      ctaLink: "",
     },
   },
-};
 
-export const seoData = {
-  header: {
-    title: "Search Engine Optimisation",
-    tagLine: "Let us keep your site up to date",
-  },
-
-  textBox: {
+  textBox2: {
     attrs: {
-      heading: "",
-      title: "Hello Street",
-      body: "body about SEO",
+      title: "",
+      heading: "Hosting",
+      body: "We can take the hassle out of web hosting. ",
       body2: "",
       ctaLabel: "Find out more",
-      image: "data.attrs",
+      image: hellowhite,
       left: false,
-      ctaLink: "/seo",
+      ctaLink: "",
+    },
+  },
+  textBox3: {
+    attrs: {
+      title: "",
+      heading: "Search Engine Optimization",
+      body: "If your business relies on internet traffic, it’s never been more important to get high up the search listings. Whether we’re building or maintaining your site, or even if you just want to work together to improve your ranking, we have the expertise to get you noticed",
+      body2: "",
+      ctaLabel: "Find out more",
+      image: chart,
+      left: true,
+      ctaLink: "",
+    },
+  },
+  textBox4: {
+    attrs: {
+      title: "",
+      heading: "Security",
+      body: "We use industry standard security technology to keep you site and data safe.",
+      body2: "",
+      ctaLabel: "Find out more",
+      image: hellowhite,
+      left: false,
+      ctaLink: "",
     },
   },
 };
-export const contentManagemtData = {
+export const contentManagementData = {
   header: {
-    title: "Content Management",
+    title: "content management",
     tagLine: "Let us update your content",
   },
 
   textBox: {
     attrs: {
+      title: "Content Management ",
       heading: "",
-      title: "Hello Street",
-      body: "body about Content management",
-      body2: "",
-      ctaLabel: "Get in touch",
-      image: "data.attrs",
+      body: "We can handle all of your content management. We can have scheduled content updates, one off updates or give you the keys to update your content yourself.",
+      body2:
+        "We use a range of technologies to set up content management including WordPress and Umbraco so depending on how your site is set up, we can make sure your sit gets what it needs, when it needs it",
+      ctaLabel: "Find out more",
+      image: hellowhite,
       left: false,
-      ctaLink: "/content-management",
+      ctaLink: "/hello",
     },
   },
 };
@@ -160,12 +213,12 @@ export const pricingData = {
   },
   textBox: {
     attrs: {
-      heading: "",
       title: "Prices",
+      heading: "",
       body: "body about Content management",
       body2: "",
       ctaLabel: "Get in touch",
-      image: "data.attrs",
+      image: hellowhite,
       left: false,
       ctaLink: "/content-management",
     },
@@ -180,12 +233,30 @@ export const AboutUsData = {
     attrs: {
       title: "",
       heading: "Hello Street",
-      body: "we are passionate about websites. Having worked in small companies, large companies, startups and we established design agencies, our team specialise in creating responsive, engaging site which will generate more leads and higher search engine results.",
+      body: "From our offices in west London, we help clients across the     county We are a dedicated team with a passion for delivering",
       body2: "",
       ctaLabel: "Get in touch",
-      image: "data.attrs",
+      image: hellowhite,
       left: true,
-      ctaLink: "/development",
+      ctaLink: "/hello",
+    },
+  },
+};
+export const SayHelloData = {
+  header: {
+    title: "",
+    tagLine: "",
+  },
+  textBox1: {
+    attrs: {
+      title: "Hello Street",
+      heading: "Say Hello to working together",
+      body: "We offer bespoke solutions to grow your web presence. We’d love to hear from you so we can work together to find the solution that fits your needs. ",
+      body2: "Just fill in the form below and let us know what you need!",
+      ctaLabel: "",
+      image: smile,
+      left: true,
+      ctaLink: "",
     },
   },
 };

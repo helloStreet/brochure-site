@@ -47,6 +47,7 @@ module.exports = {
       },
       maxWidth: {
         maxWidth: "1800px",
+        priceCard: "300px",
       },
       width: {
         headerBox: "650px",
@@ -59,6 +60,15 @@ module.exports = {
         60: "60px",
         50: "50px",
         40: "40px",
+        500: "500px",
+        700: "700px",
+      },
+      transitionTimingFunction: {
+        "in-expo": "cubic-bezier(0.95, 0.05, 0.795, 0.035)",
+        "out-expo": "cubic-bezier(0.19, 1, 0.22, 1)",
+      },
+      transitionProperty: {
+        height: "height",
       },
     },
     variants: {

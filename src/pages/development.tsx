@@ -1,15 +1,16 @@
 import React from "react";
 import SmallPageHeader from "../Components/Headers/SmallPageHeader";
 import Layout from "../Components/Layout/Layout";
+import HeaderWithBody from "../Components/TextBoxes/HeaderWithBody";
 import ImageWithText from "../Components/TextBoxes/ImageWithText";
 import { developmentData } from "../utils/Strings";
 const development = () => {
-  console.log(developmentData.header);
   return (
     <Layout>
       <SmallPageHeader data={developmentData.header} />
 
-      <ImageWithText data={developmentData.textBox} />
+      <HeaderWithBody data={developmentData.textBox} />
+      <ImageWithText data={developmentData.textBox2} />
     </Layout>
   );
 };

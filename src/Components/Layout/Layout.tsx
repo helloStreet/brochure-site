@@ -16,7 +16,7 @@ const Layout = ({ title, children }) => {
       <DesktopNavBar NavItems={NavItems} />
       <MobileNav mobileitems={NavItems} />
       {children}
-      <PromoBanner />
+      {title != "Hello Street" && <PromoBanner />}
       <Footer getInTouchLinks={getInTouchLinks} pages={pages} />
     </div>
   );

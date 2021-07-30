@@ -7,16 +7,16 @@
     @apply text-h1mobile  md:text-h1desktop font-serif mb-4;
   }
   h2 {
-    @apply text-h2mobile md:text-h2desktop font-serif mb-3.5;
+    @apply text-h2mobile md:text-h2desktop font-serif mb-3.5 text-myaubergine;
   }
   h3 {
-    @apply text-h3mobile md:text-h3desktop font-serif mb-3;
+    @apply text-h3mobile md:text-h3desktop font-serif mb-3 text-myaubergine;
   }
   h4 {
-    @apply text-h4mobile md:text-h4desktop font-serif mb-2.5;
+    @apply text-h4mobile md:text-h4desktop font-serif mb-2.5 text-myaubergine;
   }
   h5 {
-    @apply text-h5mobile md:text-h5desktop font-serif mb-2;
+    @apply text-h5mobile md:text-h5desktop font-serif mb-2 text-myaubergine;
   }
   h6 {
     @apply text-h6mobile md:text-h6desktop font-serif mb-2;
@@ -28,16 +28,16 @@
     @apply text-bodymobile md:text-bodytablet lg:text-bodydesktop font-mono pb-3;
   }
   span {
-    @apply text-bodymobile md:text-bodytablet lg:text-bodydesktop font-mono;
+    @apply text-bodymobile md:text-bodytablet lg:text-bodydesktop font-mono mx-auto;
   }
   li {
-    @apply text-bodymobile md:text-bodytablet lg:text-bodydesktop font-mono pb-2 ml-5;
+    @apply text-bodymobile md:text-bodytablet lg:text-bodydesktop font-mono px-3 ml-5;
   }
   a {
     @apply text-xl;
   }
   .btn-primary {
-    @apply w-full h-12  text-center items-center  mx-auto px-1       
+    @apply w-full h-12 flex text-center items-center  mx-auto px-6       
       text-mypink rounded-md text-sm font-bold border-none uppercase
       transition-all duration-200 relative z-10 bg-transparent
       hover:text-myaubergine overflow-hidden
@@ -56,7 +56,7 @@
     @apply w-full;
   }
   .btn-secondary {
-    @apply w-full h-12  text-center items-center  mx-auto px-1       
+    @apply w-full h-12 flex text-center items-center max-w-xs mx-auto px-6       
       text-myaubergine rounded-md text-sm font-bold border-none uppercase
       transition-all duration-200 relative z-10 bg-transparent
       hover:text-mypink overflow-hidden
@@ -75,61 +75,10 @@
     @apply w-full;
   }
 
-  /* RADIO BUTTONS */
-  /* Hide original check icon */
-  input[type="radio"] {
-    opacity: 0;
-    position: absolute;
-  }
-  /* Base styling of label */
-  input[type="radio"] + label {
-    margin-right: 8px;
-    position: relative;
-    margin: 0 8px 0 0;
-    margin-bottom: 10px !important;
-    font-weight: 300;
-    cursor: pointer;
-    display: inline-block;
-    background-color: white;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-left: 18px;
-    padding-right: 18px;
-    border: 1px solid #dadada;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s;
-    min-height: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 1px solid #dadada;
-  }
-  /* styling of label when checked */
-  input[type="radio"]:checked + label {
-    color: white;
-    @apply bg-mypink;
-    border: 1px solid #ce4b3e;
-  }
-
-  select {
-    @apply w-full py-4 border-gray-200 focus:border-black focus:ring-0 shadow-inner	focus:shadow-none;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  [type="password"] {
-    @apply w-full py-4 border-gray-200 focus:border-black focus:ring-0 shadow-inner	focus:shadow-none;
-  }
-
-  .validation-success {
-    @apply border-green-500 hover:bg-green-100 hover:text-green-500 transition !important;
-  }
-
-  .validation-error {
-    @apply border-red-500 hover:bg-red-100  hover:text-red-500 transition !important;
-  }
   .social-icon {
     @apply bg-mypink rounded-full  inline-block mr-2;
+  }
+  .container-wrapper {
+    @apply mx-auto max-w-screen-xl mb-16 px-4;
   }
 }

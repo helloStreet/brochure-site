@@ -44,3 +44,17 @@
     margin-left: 75px;
   }
 }
+
+.card-text-fade-in {
+  padding: 4px 10px;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: text-in 0.5s forwards;
+}
+
+@keyframes text-in {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
