@@ -1,11 +1,9 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
 import styled from "styled-components";
-import logo from "../../images/logotransparentsmall.png";
+import logo from "../../images/hellostreet/logotransparentsmall.png";
 
-
-
-const MobileNav = ({mobileitems}) => {
+const MobileNav = ({ mobileitems }) => {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   return (

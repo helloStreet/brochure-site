@@ -3,14 +3,14 @@ import SmallPageHeader from "../Components/Headers/SmallPageHeader";
 import Layout from "../Components/Layout/Layout";
 import { HeaderWithBody } from "../Components/TextBoxes/HeaderWithBody";
 import ImageWithText from "../Components/TextBoxes/ImageWithText";
-import { SayHelloData } from "../utils/Strings";
+import { sayHelloData } from "../utils/Strings";
 
 const Hello = () => {
   return (
     <Layout title="Hello Street">
-      <SmallPageHeader data={SayHelloData.header} />
+      <SmallPageHeader data={sayHelloData.header} />
 
-      <ImageWithText data={SayHelloData.textBox1} />
+      <ImageWithText data={sayHelloData.textBox1} />
     </Layout>
   );
 };

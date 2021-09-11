@@ -12,11 +12,9 @@ const maintenance = () => {
 
       <ImageWithText data={maintenanceData.textBox1} />
       <Bar />
-      <HeaderWithBody data={maintenanceData.textBox2} />
+      <ImageWithText data={maintenanceData.textBox2} />
       <Bar />
       <ImageWithText data={maintenanceData.textBox3} />
-      <Bar />
-      <ImageWithText data={maintenanceData.textBox4} />
     </Layout>
   );
 };

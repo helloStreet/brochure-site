@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./src/styles/animations.scss";
 
 @layer base {
   h1 {
@@ -37,7 +38,7 @@
     @apply text-xl;
   }
   .btn-primary {
-    @apply w-full h-12 flex text-center items-center  mx-auto px-6       
+    @apply w-full h-12 flex text-center items-center  px-6       
       text-mypink rounded-md text-sm font-bold border-none uppercase
       transition-all duration-200 relative z-10 bg-transparent
       hover:text-myaubergine overflow-hidden
@@ -56,7 +57,7 @@
     @apply w-full;
   }
   .btn-secondary {
-    @apply w-full h-12 flex text-center items-center max-w-xs mx-auto px-6       
+    @apply w-full h-12 flex text-center items-center max-w-xs px-6       
       text-myaubergine rounded-md text-sm font-bold border-none uppercase
       transition-all duration-200 relative z-10 bg-transparent
       hover:text-mypink overflow-hidden
@@ -80,5 +81,30 @@
   }
   .container-wrapper {
     @apply mx-auto max-w-screen-xl mb-16 px-4;
+  }
+  .image-wrapper {
+    position: relative;
+    object-fit: contain;
+  }
+
+  .couple-animation {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    max-width: 100%;
+  }
+
+  .split-1 {
+    top: 0;
+    left: 0;
+    display: static;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .main-1 {
+    z-index: 1;
   }
 }

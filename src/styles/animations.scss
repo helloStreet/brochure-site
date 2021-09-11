@@ -1,3 +1,41 @@
 .home-header-animation {
-  background-color: yellow;
+  opacity: 0;
+  animation: hello 1s ease-in-out 0s 1 forwards;
+}
+
+@keyframes hello {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bar-in {
+  position: relative;
+  left: -100%;
+  animation: barin 0.5s ease-out 0s 1 forwards;
+}
+
+@keyframes barin {
+  0% {
+  }
+  100% {
+    left: 0;
+  }
+}
+.fade-in {
+  position: relative;
+  opacity: 1;
+  animation: fadein 0.5s ease-out 0s 1 forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

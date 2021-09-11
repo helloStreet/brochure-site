@@ -1,0 +1,46 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="100%"
+  height="169.671mm"
+  viewBox="0 0 1052 668"
+  class="chart-anim"
+>
+  <path
+    id="Unnamed"
+    fill="none"
+    stroke="#2c062d"
+    stroke-width="65"
+    d="M 76.00,664.00
+           C 90.22,648.05 217.00,410.00 247.00,410.00
+             270.00,406.00 372.92,633.47 390.00,599.00
+             422.87,619.43 612.48,186.76 642.00,225.00
+             660.69,194.35 787.58,466.28 811.00,449.00
+             845.99,467.45 1049.97,38.86 1052.00,68.00"
+  />
+  <style>
+    .chart-anim {
+      top: 0;
+      left: 0;
+      position: absolute;
+      z-index: 2;
+      object-fit: contain;
+      max-width: 100%;
+    }
+
+    .chart-anim path {
+      z-index: 2;
+      stroke-dasharray: 1765;
+      stroke-dashoffset: 0;
+      animation: chartfill 1.5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes chartfill {
+      0% {
+      }
+      100% {
+        stroke-dashoffset: -1765;
+      }
+    }
+  </style>
+</svg>

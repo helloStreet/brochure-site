@@ -15,8 +15,8 @@ export const NavLinks = [
 ];
 
 export const footerContactLinks = [
-  { title: "+44 7737078078", Url: "/" },
-  { title: "hello@hellostreet.co.uk", Url: "/" },
+  { title: "+44 7737078078", Url: "tel:07737078078" },
+  { title: "hello@hellostreet.co.uk", Url: "mailto:hello@hellostreet.co.uk" },
 ];
 
 export const footerPages = [
@@ -25,6 +25,7 @@ export const footerPages = [
   { title: "Terms and conditions", Url: "/" },
   { title: "Privacy Policy", Url: "/" },
 ];
+export const ctaData = { label: "Say Hello", link: "/hello" };
 
 let AllPages = [];
 

@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import hello from "../../images/hellostreetwhite.jpg";
+import hello from "../../images/hellostreet/hellostreetwhite.jpg";
 
 const Footer = ({ pages, getInTouchLinks }) => {
   return (
@@ -28,13 +28,13 @@ const Footer = ({ pages, getInTouchLinks }) => {
           <h6 className="text-peach mb-5">Get in touch </h6>
           {getInTouchLinks.map((item, i) => {
             return (
-              <Link
-                to={item.Url}
+              <a
+                href={item.Url}
                 className="pb-3 hover:underline text-base"
                 key={`footer-link-${item.title}`}
               >
                 <span>{item.title}</span>
-              </Link>
+              </a>
             );
           })}
         </div>

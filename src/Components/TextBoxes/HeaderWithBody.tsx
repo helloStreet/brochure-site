@@ -11,14 +11,14 @@ export const HeaderWithBody = ({ data }) => {
   const ctaLink = data.attrs.ctaLink;
 
   return (
-    <div>
-      <div className="container-wrapper">
+    <section>
+      <div className="container-wrapper px-10 py-20 bg-mylightblue">
         <div
           className={`flex flex-col justify-between w-full ${
             left ? "md:flex-row" : "md:flex-row-reverse"
           }`}
         >
-          <div className="flex-1 md:ml-5 md:pr-2">
+          <div className="flex-1 ">
             {title && (
               <p className="text-myaubergine font-magnole pt-5 md:pt-0">
                 {title}
@@ -41,7 +41,7 @@ export const HeaderWithBody = ({ data }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default HeaderWithBody;
