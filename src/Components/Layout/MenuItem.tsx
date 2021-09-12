@@ -55,5 +55,4 @@ const MenuItem = ({ item }) => {
     </div>
   );
 };
-
 export default MenuItem;
