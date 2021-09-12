@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "HelloStreet",
+    siteUrl: `https://hellostreet.azurewebsites.net`,
   },
   plugins: [
     // {
